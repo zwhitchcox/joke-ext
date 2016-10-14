@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Crouton Clipper",
+  "description": "Link between croutonclipper and Chrome",
+  "version": "1.0",
+  "background": {
+    "page": "background.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://*/*","http://*/*"],
+    "js": ["oncopy.js"]
+  }]
+}
